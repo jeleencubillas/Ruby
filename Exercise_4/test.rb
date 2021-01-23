@@ -1,29 +1,29 @@
-# #1. We have a Confection class representing baked desserts. Your job is to create a new subclass of Confection, named Cupcake and Banana Cake. Cupcakes and Banana Cakes need to be baked just like other confections, but cupcakes also need to be frosted afterward. Write a prepare method for your Cupcake and Banana Cake class that prints “Baking at 350 degrees for 25 minutes.“, and then prints “Applying frosting” for Cupcake only.
-# class Confection
-#     def prepare
-#         "Baking at 350 degrees for 25 minutes."
-#     end
-# end
+#1. We have a Confection class representing baked desserts. Your job is to create a new subclass of Confection, named Cupcake and Banana Cake. Cupcakes and Banana Cakes need to be baked just like other confections, but cupcakes also need to be frosted afterward. Write a prepare method for your Cupcake and Banana Cake class that prints “Baking at 350 degrees for 25 minutes.“, and then prints “Applying frosting” for Cupcake only.
+class Confection
+    def prepare
+        "Baking at 350 degrees for 25 minutes."
+    end
+end
 
-# class Cupcake < Confection
-#     def prepare
-#         super + " Applying frosting."
-#     end
-# end
+class Cupcake < Confection
+    def prepare
+        super + " Applying frosting."
+    end
+end
 
-# class BananaCake < Confection
-# end
+class BananaCake < Confection
+end
 
-# cake = Confection.new
-# cupcake = Cupcake.new
-# banana_cake = BananaCake.new
+cake = Confection.new
+cupcake = Cupcake.new
+banana_cake = BananaCake.new
 
-# puts "Confection Preparation:"
-# puts cake.prepare
-# puts "Cupcake Preparation:"
-# puts cupcake.prepare
-# puts "Banana Cake Preparation:"
-# puts banana_cake.prepare
+puts "Confection Preparation:"
+puts cake.prepare
+puts "Cupcake Preparation:"
+puts cupcake.prepare
+puts "Banana Cake Preparation:"
+puts banana_cake.prepare
 
 
 #2. Fix this code.
